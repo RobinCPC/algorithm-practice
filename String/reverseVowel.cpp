@@ -47,6 +47,8 @@ public:
                     char temp = s[left];
                     s[left] = s[right];
                     s[right] = temp;
+                    swapL = false;
+                    swapR = false;
                     left += 1;
                     right -= 1;
                 }
@@ -61,7 +63,7 @@ public:
 int main()
 {
     Solution sol = Solution();
-    string test_str = "hEllo";
+    string test_str = "leetcode";
     string res_str = sol.reverseVowels(test_str);
     cout << res_str << endl;
     string test_str2 = "Eo";
