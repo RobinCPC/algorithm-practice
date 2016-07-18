@@ -4,7 +4,7 @@
 # Supposed the linked list is 1 -> 2 -> 3 -> 4 and you are given the third node
 # with value 3, the linked list should become 1 -> 2 -> 4 after calling your function.
 #
-# time: O(n)
+# time: O(1)
 # space: O(1)
 
 # Definition for singly-linked list.
@@ -29,7 +29,7 @@ class Solution(object):
             prev.next = None
         return
 
-   def deleteNode(self, node):
+   def deleteNode1(self, node):
         """
         :type node: ListNode
         :rtype: void Do not return anything, modify node in-place instead.
@@ -41,6 +41,15 @@ class Solution(object):
                 curt.next = None
                 break
             curt = curt.next
+        return
+
+   def deleteNode(self, node):
+        """
+        :type node: ListNode
+        :rtype: void Do not return anything, modify node in-place instead.
+        """
+        node.val = node.next.val
+        node.next = node.next.next
         return
 
 if __name__ == '__main__':
