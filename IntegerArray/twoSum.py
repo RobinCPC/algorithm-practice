@@ -1,4 +1,7 @@
 '''
+#: 1
+Title: Two Sum
+
 Given an array of integers, return indices of the two numbers such that they add up to a specific target.
 
 You may assume that each input would have exactly one solution.
@@ -13,6 +16,7 @@ return [0, 1].
 
 Time: O(n)
 Space:O(n)  # need extra space for hash table
+Difficulty: Easy
 '''
 
 class Solution(object):

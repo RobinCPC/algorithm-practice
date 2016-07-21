@@ -4,8 +4,8 @@
 ## String
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
 -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
-28   | strstr          |  Python/C++     |                 |                 |               |              |
-     |                 |                 |                 |                 |               |              |
+28   | strstr | [Python](./String/strStr.py) [C++](./String/strStr.cpp) | O(n) | O(1) | Easy |              |
+242  | Anagram | [Python](./String/anagrams.py) [C++](./String/anagrams.cpp) | O(n) | O(1) | Easy           |              |
 
 
 ## HashTable
@@ -16,4 +16,5 @@
 ## Math
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
 -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
-1 | Two Sum| Python/c++| | |Easy | |
+1 | Two Sum| [Python](./IntegerArray/twoSum.py) [C++](./IntegerArray/twoSum.cpp) | O(n) | O(n) | Easy | |
+
