@@ -11,6 +11,9 @@
 
 ### Above combination will ignore all files without extension ###
 
+# Ipython_notebook
+*/.ipynb_checkpoints/*
+
 # Compiled Object files
 *.slo
 *.lo
