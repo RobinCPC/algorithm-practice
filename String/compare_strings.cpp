@@ -3,7 +3,14 @@
 * Title: Compare Strings
 * Description:
 * ------
+* Compare two strings A and B, determine whether A contains all of the characters in B.
 * 
+* The characters in string A and B are all Upper Case letters.
+* 
+* Example
+* For A = "ABCD", B = "ABC", return true.
+* 
+* For A = "ABCD" B = "AABC", return false.
 * ------
 * Time: O(2n)
 * Space: O(1)  // Constant use 256 space
@@ -33,7 +40,7 @@ public:
         int letterCont[AlphabetNum] = {0};
         for (int i= 0; i < A.size(); ++i)
         {
-            ++letterCont[A[i] - 'A'];    
+            ++letterCont[A[i] - 'A'];
         }
 
         for (int i = 0; i < B.size(); i++)
@@ -64,6 +71,6 @@ int main(int argc, const char *argv[])
     std::cout << (sol.compare_strings(A, B)?"true":"false") << std::endl;
     std::cout << "Comparing A with C..." << std::endl;
     std::cout << (sol.compare_strings(A, C)?"true":"false") << std::endl;
-    
+
     return 0;
 }

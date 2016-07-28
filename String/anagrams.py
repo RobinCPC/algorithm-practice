@@ -1,4 +1,8 @@
-'''
+"""
+#: 242
+Title: Valid Anagram
+Description:
+------
 Given two strings s and t, write a function to determine if t is an anagram of s.
 
 For example,
@@ -6,15 +10,16 @@ s = "anagram", t = "nagaram", return true.
 s = "rat", t = "car", return false.
 
 Note:
-You may assume the string contains only lowercase alphabets.
+    You may assume the string contains only lowercase alphabets.
 
 Follow up:
 What if the inputs contain unicode characters? How would you adapt your solution to such case?
+------
+Time: O(n)
+Space: O(1) # const 256 element of list
+Difficulty: Easy
+"""
 
-
-time : O(n)
-space: O(1) # const 256 element of list
-'''
 class Solution(object):
     def anagrams_buildIn(self, s, t):
         """
