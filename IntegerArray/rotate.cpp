@@ -84,7 +84,8 @@ int main(int argc, const char *argv[])
     int k = 3;
     sol.rotate_alg(nums, k);
     std::cout << "nums = " << std::endl;
-    for (auto it = nums.begin(); it != nums.end(); ++it) {
+    // use for iterator to loop through element in vector
+    for (vector<int>::iterator it = nums.begin(); it != nums.end(); ++it) {
         std::cout << ' '<< *it;
     }
     std::cout << '\n';
@@ -93,11 +94,11 @@ int main(int argc, const char *argv[])
     Solution2 sol2 = Solution2();
     sol2.rotate(nums, k);
     std::cout << "nums = " << '\n';
+    // use `auto`
     for (auto it = nums.begin(); it != nums.end(); ++it) {
         std::cout << ' ' << *it;
     }
     std::cout << '\n';
-
 
     return 0;
 }
