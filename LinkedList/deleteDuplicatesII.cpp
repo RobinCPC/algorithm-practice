@@ -16,7 +16,24 @@ struct ListNode {
     int val;
     ListNode *next;
     ListNode(int x) : val(x), next(NULL) {}
+    /*~ListNode()
+    {
+        while (this->next !=nullptr)
+        {
+            this->next->~ListNode();
+        }
+        delete this;
+    }*/
 };
+
+
+void freeListNode(ListNode* node_ptr)
+{
+    if (node_ptr->next != nullptr) {
+        freeListNode(node_ptr->next);
+    }
+    delete node_ptr;
+}
 
 
 class Solution {
@@ -57,14 +74,14 @@ int main(int argc, char* argv[])
     //ListNode* p2 = new ListNode(L1[0]);
     ListNode* curt = &n1;
     //ListNode* curt = p2;
-    for(int i=1; i< L1.size(); ++i)
+    for(uint i=1; i< L1.size(); ++i)
     {
-        curt->next = new ListNode(L1[i]);   // will become dangling ptr?
-        curt = curt->next;
+        curt->next = new ListNode(L1[i]);   // will become dangling ptr? yes, could use
+        curt = curt->next;                  // valgrind to check.
     }
     std::cout << "before delete duplicate...\n";
     curt = &n1;
-    for(int i=0; i<L1.size(); ++i)
+    for(uint i=0; i<L1.size(); ++i)
     {
         std::cout << curt->val << ", ";
         curt = curt->next;
@@ -86,6 +103,8 @@ int main(int argc, char* argv[])
         curt = curt->next;
     }
     std::cout << '\n';
+
+    freeListNode(result);
 
     return 0;
 }
