@@ -9,6 +9,9 @@
 # Not ignore all dirs
 !*/
 
+# Not ignore Makefile
+!Makefile
+
 ### Above combination will ignore all files without extension ###
 
 # Ipython_notebook
