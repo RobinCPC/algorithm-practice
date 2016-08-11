@@ -14,6 +14,16 @@
 #include <iostream>
 #include <memory>
 
+// template parameter pack 
+// source:
+// http://en.cppreference.com/w/cpp/language/parameter_pack
+// TODO: read more about it.
+template<class T, class... Args>
+std::unique_ptr<T> make_unique(Args&&... args)
+{
+    return std::unique_ptr<T>(new T(std::forward<Args>(args)...));
+}
+
 template<class T>
 class BinarySearchTree
 {
@@ -42,7 +52,8 @@ BinarySearchTree<T>::BinarySearchTree() : root(nullptr){}
 template<class T>
 void BinarySearchTree<T>::insert(const T& ref)
 {
-    std::unique_ptr<TreeNode> node( new TreeNode(ref));
+    //std::unique_ptr<TreeNode> node( new TreeNode(ref));
+    std::unique_ptr<TreeNode> node = make_unique<TreeNode>(ref);
     if(root == nullptr)
     {
         root = std::move(node);
