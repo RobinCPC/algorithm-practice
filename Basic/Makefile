@@ -28,7 +28,7 @@ else
 			   -Wreorder -Wwrite-strings
 endif
 
-CXX = g++
+#CXX = g++ 		# use system default complier
 CXXFLAGS = $(FLAGS_OPT)
 
 
