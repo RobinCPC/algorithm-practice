@@ -54,7 +54,9 @@ class Solution:
         return
 
 def BFS_insert(node, que_list):
-    """Insert a queue(list) into a binary Tree"""
+    """
+        Use BFS ot insert a queue(list) into a binary tree
+    """
     from collections import deque
     trav_lt = deque()
     trav_lt.append(node)
@@ -76,24 +78,6 @@ def BFS_insert(node, que_list):
 
     return
 
-#    if len(que_list) != 0:
-#        if que_list[0] == None:
-#            que_list.pop(0)
-#        else:
-#            node.left = TreeNode(que_list.pop(0))
-#    if len(que_list) != 0:
-#        if que_list[0] == None:
-#            que_list.pop(0)
-#        else:
-#            node.right = TreeNode(que_list.pop(0))
-#    if len(que_list) == 0:
-#        return
-#    if node.left != None:
-#        BFS_insert(node.left, que_list)
-#    if node.right != None:
-#        BFS_insert(node.right, que_list)
-#    return
-
 
 if __name__ == '__main__':
     sol = Solution()
@@ -101,5 +85,4 @@ if __name__ == '__main__':
     root = TreeNode(inp_list.pop(0))
     BFS_insert(root, inp_list)
     print sol.binaryTreePaths(root)
-
 
