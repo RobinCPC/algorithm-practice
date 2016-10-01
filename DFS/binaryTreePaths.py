@@ -55,7 +55,7 @@ class Solution:
 
 def BFS_insert(node, que_list):
     """
-        Use BFS ot insert a queue(list) into a binary tree
+        Use BFS to insert a queue(list) into a binary tree
     """
     from collections import deque
     trav_lt = deque()

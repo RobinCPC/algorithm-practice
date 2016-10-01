@@ -46,3 +46,8 @@
 *.exe
 *.out
 *.app
+
+# ignore files in some folder
+Basic/*
+foobar/*
+
