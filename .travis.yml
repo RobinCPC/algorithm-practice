@@ -18,9 +18,9 @@ before_install:
 script:
     - pip list
     - python ./String/reverseStr.py
+    - python test_script.py
     - cd ./Basic
     - make binaryTree_test && ./binaryTree_test
-    - python test_script.py
 # command to notify owner
 notifications:
     email: false
