@@ -1,5 +1,13 @@
-# LeetCode	![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) ![License](https://img.shields.io/badge/license-MIT-blue.svg) [![Build Status](https://travis-ci.com/RobinCPC/algorithm-practice.svg?token=38WHdrpPdHmSXRxaucRW&branch=master)](https://travis-ci.com/RobinCPC/algorithm-practice)
-:memo: Practing LeetCode with Python/C++
+# Algorithm-Practice ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) ![License](https://img.shields.io/badge/license-MIT-blue.svg) [![Build Status](https://travis-ci.com/RobinCPC/algorithm-practice.svg?token=38WHdrpPdHmSXRxaucRW&branch=master)](https://travis-ci.com/RobinCPC/algorithm-practice)
+:memo: Practicing Algorithms with Python/C++
+
+Source:
+* [LeetCode](https://leetcode.com/)
+* [Data Structure and Algorithm notes](https://www.gitbook.com/book/yuanbin/algorithm/details)
+* [InteractivePython](https://interactivepython.org/runestone/static/pythonds/index.html)
+
+
+Currently, not update following lists.
 
 ## String
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
