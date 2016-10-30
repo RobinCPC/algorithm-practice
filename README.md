@@ -6,6 +6,7 @@ Source:
 * [Data Structure and Algorithm notes](https://www.gitbook.com/book/yuanbin/algorithm/details)
 * [InteractivePython](https://interactivepython.org/runestone/static/pythonds/index.html)
 
+I also use Travis-CI in this repo to automatically run all python solutions with [test_script](./test_script.py)
 
 Currently, not update following lists.
 
