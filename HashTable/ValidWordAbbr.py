@@ -40,8 +40,8 @@ isUnique("make") ->
 true
 ```
 ------
-Time: O(1)
-Space: O(k)
+Time: O(1)  # time for looking up dict, but need O(n) to construct dict
+Space: O(k) # unique key word
 Difficulty: Easy
 """
 
@@ -58,7 +58,7 @@ class ValidWordAbbr(object):
                 self.abbr[ab] = w
             elif ab in self.abbr and w != self.abbr[ab]:
                 self.abbr[ab] += '2'
-        print self.abbr
+        #print self.abbr
 
 
     def getAbbr(self, word):
