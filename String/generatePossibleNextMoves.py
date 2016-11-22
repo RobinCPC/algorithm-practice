@@ -18,7 +18,7 @@ For example, given s = "++++", after one move, it may become one of the followin
 If there is no valid move, return an empty list [].
 ------
 Time: O(n)
-Space: O(n)
+Space: O(n^2)   # worst case, a list to record n possible flip (each w/ n char)
 Difficulty: Easy
 """
 
