@@ -18,6 +18,7 @@ Description:
 Time: O(n*n!)
 Space: O(n)
 Difficulty: Medium
+Note: there are n! permutations and it requires O(n) to find a permutation.
 """
 #TODO: Check Complexity
 
