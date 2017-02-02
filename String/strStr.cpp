@@ -1,10 +1,16 @@
 /*
+* #: 28
+* Title: Implement strStr()
+* Description:
+* ------
 * implement strStr().
 * 
 * Returns the index of the first occurrence of needle in haystack, 
 * or -1 if needle is not part of haystack. 
-* time: O(n)
-* space: O(1)
+* ------
+* Time: O(n)
+* Space: O(1)
+* Difficulty:  Easy
 */
 #include <iostream>
 #include <string>
