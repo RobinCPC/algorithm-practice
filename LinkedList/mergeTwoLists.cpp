@@ -160,6 +160,12 @@ int main()
 
     Solution sol = Solution();
     ListNode* LL = sol.mergeTwoLists(L1, L2);
-    std::cout << LL->val << LL->next->val << LL->next->next->val << LL->next->next->next->val << '\n';
+    
+    // a temp pointer to go through ListNode
+    ListNode* head = LL;
+    while (head){
+        std::cout << head->val  << ", ";
+        head = head->next;
+    }
     return 0;
 }
