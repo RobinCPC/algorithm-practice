@@ -11,19 +11,19 @@ I also use Travis-CI in this repo to automatically run all python solutions with
 Currently, not update following lists.
 
 ## String
-  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
------|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
-28   | strstr | [Python](./String/strStr.py) [C++](./String/strStr.cpp) | O(n) | O(1) | Easy |              |
-242  | Anagram | [Python](./String/anagrams.py) [C++](./String/anagrams.cpp) | O(n) | O(1) | Easy           |              |
+| #     | Title            | Solution                                                    | Time            | Space           | Difficulty    | Tag            | Note  |
+| ----- | ---------------- | ---------------                                             | --------------- | --------------- | ------------- | -------------- | ----- |
+| 28    | strstr           | [Python](./String/strStr.py) [C++](./String/strStr.cpp)     | O(n)            | O(1)            | Easy          |                |       |
+| 242   | Anagram          | [Python](./String/anagrams.py) [C++](./String/anagrams.cpp) | O(n)            | O(1)            | Easy          |                |       |
 
 
 ## HashTable
-  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
------|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
-9 | Palindrome Number| Python/C++| | |Easy |
+| #     | Title             | Solution        | Time            | Space           | Difficulty    | Tag            | Note  |
+| ----- | ----------------  | --------------- | --------------- | --------------- | ------------- | -------------- | ----- |
+| 9     | Palindrome Number | Python/C++      |                 |                 | Easy          |                |       |
 
 ## Math
-  #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
------|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
-1 | Two Sum| [Python](./IntegerArray/twoSum.py) [C++](./IntegerArray/twoSum.cpp) | O(n) | O(n) | Easy | |
+|  #   | Title            | Solution                                                            | Time            | Space           | Difficulty    | Tag            | Note |
+|----- | ---------------- | ---------------                                                     | --------------- | --------------- | ------------- | -------------- | ---- |
+|1     | Two Sum          | [Python](./IntegerArray/twoSum.py) [C++](./IntegerArray/twoSum.cpp) | O(n)            | O(n)            | Easy          |                |      |
 

@@ -42,7 +42,7 @@ public:
 int main(void)
 {
     Solution sol = Solution();
-    vector<int> nums = {4,1,2,3,5};
+    vector<int> nums {4,1,2,3,5};   // use uniform initialization to initialize array (c++11)
     int val = 4;
     unsigned int len = sol.removeElement(nums, val);
     for(unsigned int i=0; i<len; ++i){

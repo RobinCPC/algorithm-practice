@@ -36,6 +36,20 @@ class Solution(object):
                 h += 1
         return t + 1
 
+    def removeElement2(self, nums, val):
+        """
+        Alternative method, but not fast than first one
+        :type nums: List[int]
+        :type val: int
+        :rtype: int
+        """
+        while True:
+            if val in nums:
+                nums.pop(nums.index(val))
+            else:
+                break
+        return len(nums)
+
 
 if __name__ == '__main__':
     Sol = Solution()
@@ -43,3 +57,4 @@ if __name__ == '__main__':
     val = 4
     leng = Sol.removeElement(nums, val)
     print( nums[:leng])
+
