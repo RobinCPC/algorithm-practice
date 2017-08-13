@@ -17,6 +17,12 @@
 # Ipython_notebook
 */.ipynb_checkpoints/*
 
+# PyCharm
+.idea/*
+
+# Python compiled bytecode
+*.pyc
+
 # Compiled Object files
 *.slo
 *.lo
