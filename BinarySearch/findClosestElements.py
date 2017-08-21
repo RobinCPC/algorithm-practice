@@ -46,6 +46,26 @@ class Solution(object):
             shift_ar = sorted([(abs(x-i), i) for i in arr])
         return sorted(i[1] for i in shift_ar[:k])
 
+    def findClosestElements_bst(self, arr, k, x):
+        """
+        :type arr: List[int]
+        :type k: int
+        :type x: int
+        :rtype: List[int]
+        """
+        # # O(nlgn)
+        # arr.sort(key=lambda a: abs(a - x))
+        # return sorted(arr[:k])
+        # O(lgn + k)
+        low, high = 0, len(arr) - k
+        while low < high:
+            mid = (low + high) / 2
+            if x - arr[mid] > arr[mid + k] - x:
+                low = mid + 1
+            else:
+                high = mid
+        return arr[low: low + k]
+
 
 if __name__ == "__main__":
     sol = Solution()
