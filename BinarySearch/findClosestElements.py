@@ -28,9 +28,16 @@ Space: O(n+k)
 Difficulty: Medium
 """
 # TODO: use Binary search to find minimum element
+#from ..timing_function import *
+import imp
+import os
+cwd = os.getcwd()
+tf = imp.load_source('timing_function', cwd+'/timing_function.py')
+
 
 
 class Solution(object):
+    @tf.timing_function
     def findClosestElements(self, arr, k, x):
         """
         :type arr: List[int]
@@ -46,6 +53,7 @@ class Solution(object):
             shift_ar = sorted([(abs(x-i), i) for i in arr])
         return sorted(i[1] for i in shift_ar[:k])
 
+    @tf.timing_function
     def findClosestElements_bst(self, arr, k, x):
         """
         :type arr: List[int]
@@ -73,5 +81,6 @@ if __name__ == "__main__":
     k = 3
     x = 5
     print sol.findClosestElements(arr, k, x)
-    assert sol.findClosestElements(arr, k, x) == [3, 3, 7], "Not correct!"
+    print sol.findClosestElements_bst(arr, k, x)
+    assert sol.findClosestElements(arr, k, x) == [3, 3, 4], "Not correct!"
 
