@@ -31,8 +31,8 @@ Difficulty: Medium
 #from ..timing_function import *
 import imp
 import os
-cwd = os.getcwd()
-tf = imp.load_source('timing_function', cwd+'/timing_function.py')
+#cwd = os.getcwd()
+tf = imp.load_source('timing_function', '../timing_function.py')
 
 
 
