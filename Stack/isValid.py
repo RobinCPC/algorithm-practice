@@ -1,6 +1,6 @@
 """
 #: 20
-Title: Valid Parenthese
+Title: Valid Parentheses
 Description:
 ------
 Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
